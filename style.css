@@ -12,8 +12,6 @@
 html {
     background-color:snow;
     background-image:linear-gradient(to left, #e6ffff, rgb(230, 255, 255, .2));
-    /* background-image:linear-gradient(to right, white,#f2f2f2); */
-    /* background-image:linear-gradient(to right #e6ffff, #ccffff); */
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -21,9 +19,7 @@ html {
 
 
 
-body {    
-    /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2)50%, rgba(255, 255, 255, 0.7)50%); */
-   
+body { 
     margin-top: 0 !important;
     padding: 0 !important;
     margin-left: 0px;
@@ -105,6 +101,14 @@ a:hover {
     margin-top:90px;
 }
 
+#headPHead {
+    margin-bottom: 0px;
+}
+
+#headPP {
+    margin-top: 0px;
+}
+
 #iceCreamTruck{
     display:flex;
     justify-self: center;
@@ -139,16 +143,17 @@ a:hover {
     
 }
 
+.card:hover {
+    box-shadow: 0px 8px 16px 0px;
+}
+
 .cardImg {
     height: auto;
     width: 75%;
     box-sizing:border-box;
-    margin: 100px 50px;
-}
+    margin: 25px 25px;
 
-.card:hover {
-    box-shadow: 0px 8px 16px 0px;
-
+    }
 }
 
 .menuLinkButton {
