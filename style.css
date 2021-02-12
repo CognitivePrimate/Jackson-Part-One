@@ -228,6 +228,7 @@ a:hover {
         justify-content: space-between;
         align-items: center;
         width: 300px;
+        height: 400px;
         flex: 0 1 calc(25% - 1em);
         margin: 10px 20px;
     }
