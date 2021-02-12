@@ -31,7 +31,8 @@ body {
 h1 {
     font-size: 60px;
 }
-
+/* 4 - Navlink color */
+/* 10a - Navbar styling in accordance with style guide */
 .topLineMenu {
     display:flex;
     justify-content: space-between;
@@ -40,8 +41,8 @@ h1 {
     flex-direction: row;
     color: #7944e6;
     height: 110px;
-    width: 100%;
-    position: fixed;
+    width: auto;
+    position:fixed;
     background: rgb(255, 255, 255, .7)
 }
 
@@ -49,8 +50,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    margin-right: 90px;
-
+    margin: 0px;
 }
 
 ul {
@@ -71,12 +71,14 @@ li {
     margin: 0px 4px 0px 4px;
 }
 
+/* 4a - Nav link color */
+/* 6 - Anchor tags without underlines */
 a {
     text-decoration: none;
     color:#7944e6;
     font-size: 28px;
 }
-
+/* 7 Nav link color change */
 a:hover {
     text-decoration: none;
     color: #10fdff;
@@ -88,7 +90,8 @@ a:hover {
     margin-left: 0px;
     
 }
-
+/* 2 - Vertical layout below the header for mobile layout */
+/* 4b - Background accent color */
 .headP {
     display:flex;
     flex-wrap: wrap;
@@ -127,7 +130,7 @@ a:hover {
 }
 
 
-
+/* 4c - Border color on three cards */
 .card {
     display: flex;
     justify-content: space-between;
@@ -152,6 +155,7 @@ a:hover {
     width: 75%;
     box-sizing:border-box;
     margin: 25px 25px;
+    object-fit: contain;
 
     }
 }
@@ -160,6 +164,8 @@ a:hover {
     padding: 10px 10px 50px 10px;
 }
 
+/* 1 - Media Query, changing styles at specified width using min-width property */
+/* 3 - Desktop design horizontal for 'About' section */
 @media screen and (min-width: 768px) {
     .headP {
       display: flex;
@@ -175,8 +181,12 @@ a:hover {
       margin-top: 100px;
     }
 
+    .topLineMenu {
+        width: 100%;
+    }
+
     .topLineButtons {
-        margin-right: 30px;
+        margin-right: 10px;
     }
 
     #leftHead {
@@ -206,6 +216,7 @@ a:hover {
 
     }
 
+    /* 3a - Desktop design horizontal layout for cards */
     .cardBox {
         display: flex;
         align-self:center;
