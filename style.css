@@ -81,6 +81,8 @@ li {
     margin: 0px;
     height: auto;
     width: auto;
+    min-width: 30px;
+    min-height: 20px;
     box-sizing: border-box;
 }
 
@@ -144,7 +146,7 @@ a:hover {
     justify-content: space-between;
     border: 5px solid #7944e6;
     box-shadow: 0px 4px 8px 0px;
-    max-width: 80vw;
+    width: 80vw;
     box-sizing: border-box;
     margin-top: 10px;
     margin-bottom: 25px;
@@ -158,14 +160,22 @@ a:hover {
     box-shadow: 0px 8px 16px 0px;
 }
 
-.cardImg {
+.cardImgBox {
     height: auto;
     width: 75%;
     box-sizing:border-box;
     margin: 25px 25px;
     object-fit: contain;
+}
 
-    }
+.cardImg {
+    box-sizing: border-box;
+    align-self: center;
+    margin: 0px;
+    padding: 0px;
+    max-width: 250px;
+    max-height: 200px;
+    object-fit: cover;
 }
 
 .menuLinkButton {
@@ -199,6 +209,7 @@ a:hover {
 
     #leftHead {
         padding-top: 20px;
+        object-fit: contain;
     }
 
     #headPHead {
@@ -234,7 +245,7 @@ a:hover {
     
     }
     
-    .cardImg {
+    .cardImgBox {
         box-sizing: border-box;
         margin: 0px;
         max-width: 250px;
@@ -251,6 +262,15 @@ a:hover {
         height: 400px;
         flex: 0 1 calc(25% - 1em);
         margin: 10px 20px;
+    }
+
+    .cardImg {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        max-width: 250px;
+        max-height: 200px;
+        object-fit:contain;
     }
 
     .cardHead {
