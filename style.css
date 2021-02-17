@@ -238,14 +238,15 @@ a:hover {
     /* 3a - Desktop design horizontal layout for cards */
     .cardBox {
         display: flex;
+        flex-direction: row;
         align-self:center;
         justify-content: center;
-        flex-direction: row;
         width:100%;
     
     }
     
     .cardImgBox {
+        justify-self: center;
         box-sizing: border-box;
         margin: 0px;
         max-width: 250px;
@@ -256,8 +257,8 @@ a:hover {
     .card {
         display:flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
+        /* align-items: center; */
         width: 300px;
         height: 400px;
         flex: 0 1 calc(25% - 1em);
@@ -274,9 +275,14 @@ a:hover {
     }
 
     .cardHead {
+        display: flex;
+        align-self: center;
         margin: 0;
+    }
+
+    .menuLinkButton {
+        padding-bottom: 0;
     }
 
    
 }
-
